@@ -29,7 +29,26 @@ public class Room
     {
         this.description = description;
     }
-
+    /**
+     * 
+     */
+    public Room getExit(String direction)
+    {
+        if(direction.equals("north")){
+            return northExit;
+        }
+        if (direction.equals("east")){
+            return eastExit;
+        }
+        if(direction.equals("south")){
+            return southExit;
+        }
+        if(direction.equals("west")){
+            return westExit;
+        }
+        return null;
+    }
+    
     /**
      * Define the exits of this room.  Every direction either leads
      * to another room or is null (no exit there).

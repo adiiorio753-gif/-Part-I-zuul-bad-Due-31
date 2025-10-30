@@ -200,6 +200,10 @@ public class Game
                 System.out.print("west ");
         }
         System.out.println();
+        
+        System.out.println(currentRoom.getLongDescription());
+        System.out.println(currentRoom.getExitString());
+
         }
     }
     
